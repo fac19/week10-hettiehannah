@@ -1,4 +1,4 @@
-import { accessToken } from "../../token";
+import { accessToken } from "../token";
 
 const checkResponse = (response) => {
   if (response.status !== 200) {
@@ -8,7 +8,7 @@ const checkResponse = (response) => {
   return response.json();
 };
 
-export const getData = (username) => {
+const getUser = (username) => {
   return fetch(
     `https://api.github.com/users/${username}?access_token=${accessToken}`
   )
@@ -17,3 +17,5 @@ export const getData = (username) => {
       throw new Error(`Fetch getUserData failed ${error}`);
     });
 };
+
+export default getUser;
