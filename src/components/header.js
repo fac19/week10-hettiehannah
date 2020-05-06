@@ -62,7 +62,7 @@ const Header = () => {
         </header>
 
         <main className="poster-wrapper">
-          <Poster url={avatar_url} name={name} />
+          <Poster avatar_url={avatar_url} name={name} />
         </main>
       </div>
     );
