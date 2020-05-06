@@ -1,4 +1,4 @@
-import { accessToken } from "../token";
+const accessToken = process.env.REACT_APP_GITHUB_TOKEN;
 
 const checkResponse = (response) => {
   if (response.status !== 200) {
