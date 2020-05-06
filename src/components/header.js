@@ -11,7 +11,6 @@ const Header = () => {
   const handleSubmit = (event) => {
     event.preventDefault();
     getUser(username).then((res) => {
-      console.log(res.avatar_url);
       setUserData(res);
     });
   };
