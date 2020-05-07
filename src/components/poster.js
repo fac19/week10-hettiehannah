@@ -22,12 +22,18 @@ const Poster = (props) => {
             alt="profile pic of the criminal"
           />
         </div>
-        <p>Crime: {crime}</p>
-        <p>Punishment: {punishment} </p>
-        <p>Reward: Guaranteed Graduate Job</p>
+        <p>
+          <span>Crime:</span> {crime}
+        </p>
+        <p>
+          <span>Punishment:</span> {punishment}{" "}
+        </p>
+        <p>
+          <span>Reward:</span> Guaranteed Graduate Job
+        </p>
       </section>
       <section>
-        <h2 className="poster-title">Find their hiding spot</h2>
+        <h2 className="hiding-places-title">Find their hiding spot</h2>
         <HidingPlaces />
       </section>
     </div>

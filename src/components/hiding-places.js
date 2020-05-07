@@ -105,7 +105,9 @@ const HidingPlaces = () => {
         </button>
       </article>
       {!gameInPlay ? (
-        <button onClick={() => window.location.reload()}>Play again</button>
+        <button className="replay" onClick={() => window.location.reload()}>
+          Play again
+        </button>
       ) : null}
     </section>
   );
