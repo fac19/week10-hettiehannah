@@ -104,6 +104,9 @@ const Housing = () => {
           )}
         </button>
       </article>
+      {!gameInPlay ? (
+        <button onClick={() => window.location.reload()}>Play again</button>
+      ) : null}
     </section>
   );
 };
