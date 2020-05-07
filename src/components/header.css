@@ -1,0 +1,36 @@
+.header-wrapper {
+  margin: 3rem;
+  font-family: "Source Serif Pro", serif;
+}
+
+.header-heading {
+  font-family: "Rye", cursive;
+  font-size: 4rem;
+}
+
+.header-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-form__input,
+.header-form__submit-btn {
+  font-family: "Source Serif Pro", serif;
+  font-size: 1.25rem;
+  width: 40%;
+  margin: 0.5rem;
+}
+
+.header-form__label {
+  font-size: 1.5rem;
+  margin: 1rem;
+}
+
+.header-form__submit-btn {
+  padding: 1rem;
+  border-radius: 5px;
+  width: 20%;
+  background-color: hsl(0, 0%, 96%);
+}

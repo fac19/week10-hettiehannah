@@ -1,0 +1,41 @@
+.hiding-places {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 4rem;
+  padding-bottom: 20rem;
+}
+
+.hiding-places__article {
+  width: 25%;
+}
+
+.hiding-places__article button {
+  font-family: "Source Serif Pro", serif;
+  font-size: 1.5rem;
+  height: 100%;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.hiding-places__output {
+  font-family: "Source Serif Pro", serif;
+}
+
+.hiding-places__img {
+  width: 100%;
+}
+
+.replay {
+  width: 100%;
+  height: 5%;
+  margin-top: 5%;
+  margin-bottom: 2%;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 5px;
+  font-family: "Source Serif Pro", serif;
+  background-color: hsl(0, 0%, 96%);
+}
