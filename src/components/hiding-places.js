@@ -1,5 +1,6 @@
 import React from "react";
 import getHidingPlace from "../utils/getHidingPlace";
+import "./hiding-places.css";
 
 const HidingPlaces = () => {
   const [clickedButton, setClickedButton] = React.useState("");
@@ -46,7 +47,6 @@ const HidingPlaces = () => {
 
   return (
     <section className="hiding-places">
-      <h1>Find where they are hiding</h1>
       <article className="hiding-places__article hiding-places__article1">
         <button
           onClick={() => {
@@ -97,7 +97,7 @@ const HidingPlaces = () => {
           {imageDisplay(
             "carriage",
             <img
-              className="hiding-place__img"
+              className="hiding-places__img"
               src="https://image.flaticon.com/icons/svg/2280/2280389.svg"
               alt=""
             />
