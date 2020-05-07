@@ -1,7 +1,7 @@
 import React from "react";
 import getCrime from "../utils/getCrime";
 import getPunishment from "../utils/getPunishment";
-import Housing from "./housing";
+import HidingPlaces from "./hiding-places";
 
 const Poster = (props) => {
   const name = props.name;
@@ -24,7 +24,7 @@ const Poster = (props) => {
         <p>Reward: Guaranteed Graduate Job</p>
       </section>
       <section>
-        <Housing />
+        <HidingPlaces />
       </section>
     </div>
   );

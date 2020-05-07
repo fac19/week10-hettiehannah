@@ -1,10 +1,10 @@
 import React from "react";
-import houseRandomisation from "../utils/houseRandomisation";
+import getHidingPlace from "../utils/getHidingPlace";
 
-const Housing = () => {
+const HidingPlaces = () => {
   const [clickedButton, setClickedButton] = React.useState("");
   const [gameInPlay, setGameInPlay] = React.useState(true);
-  const correctButton = houseRandomisation();
+  const correctButton = getHidingPlace();
 
   React.useEffect(() => {
     if (gameInPlay) {
@@ -111,4 +111,4 @@ const Housing = () => {
   );
 };
 
-export default Housing;
+export default HidingPlaces;

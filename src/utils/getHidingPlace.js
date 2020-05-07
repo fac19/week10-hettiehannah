@@ -1,4 +1,4 @@
-const houseRandomisation = () => {
+const getHidingPlace = () => {
   const index = Math.floor(Math.random() * 3);
   if (index === 0) {
     return "saloon";
@@ -9,4 +9,4 @@ const houseRandomisation = () => {
   }
 };
 
-export default houseRandomisation;
+export default getHidingPlace;
