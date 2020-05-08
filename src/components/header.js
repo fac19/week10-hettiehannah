@@ -63,7 +63,7 @@ const Header = () => {
       </header>
       <main>
         {Object.keys(userData).length ? (
-          <Poster avatar_url={avatar_url} name={name} />
+          <Poster avatar_url={avatar_url} name={name ? name : username} />
         ) : null}
       </main>
     </div>
