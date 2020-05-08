@@ -9,9 +9,9 @@ const checkResponse = (response) => {
 };
 
 const getUser = (username) => {
-  return fetch(
-    `https://api.github.com/users/${username}?access_token=${accessToken}`
-  )
+  return fetch(`https://api.github.com/users/${username}?`, {
+    Authorization: `token ${accessToken}`,
+  })
     .then(checkResponse)
     .catch((error) => {
       throw new Error(`Fetch getUserData failed ${error}`);

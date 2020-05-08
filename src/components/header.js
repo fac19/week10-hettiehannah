@@ -43,7 +43,7 @@ const Header = () => {
             <option value="Albadylic">Gregor</option>
             <option value="hannahgooding">Hannah</option>
             <option value="HettieM">Hettie</option>
-            <option value="Ivo-Evans">Ivo</option>w{" "}
+            <option value="Ivo-Evans">Ivo</option>
             <option value="itsina96">Ina</option>
             <option value="jackherizsmith">Jack</option>
             <option value="jamesj-0">James</option>
