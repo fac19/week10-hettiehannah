@@ -20,7 +20,7 @@ const Header = () => {
     }
   };
 
-  const { avatar_url, name } = userData;
+  const { avatar_url, name, login } = userData;
   return (
     <div>
       <header className="header-wrapper">
@@ -31,7 +31,7 @@ const Header = () => {
           </label>
           <select
             onChange={handleUsername}
-            id="names"
+            id="username"
             className="header-form__input"
           >
             <option value="">Choose a name</option>
@@ -43,7 +43,7 @@ const Header = () => {
             <option value="Albadylic">Gregor</option>
             <option value="hannahgooding">Hannah</option>
             <option value="HettieM">Hettie</option>
-            <option value="Ivo-Evans">Ivo</option>w{" "}
+            <option value="Ivo-Evans">Ivo</option>
             <option value="itsina96">Ina</option>
             <option value="jackherizsmith">Jack</option>
             <option value="jamesj-0">James</option>
@@ -63,7 +63,7 @@ const Header = () => {
       </header>
       <main>
         {Object.keys(userData).length ? (
-          <Poster avatar_url={avatar_url} name={name} />
+          <Poster avatar_url={avatar_url} name={name} username={login} />
         ) : null}
       </main>
     </div>
